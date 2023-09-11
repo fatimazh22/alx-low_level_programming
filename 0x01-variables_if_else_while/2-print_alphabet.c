@@ -9,20 +9,11 @@
  */
 int main(void)
 {
-	int a, b;
+	char str;
 
-	for (a = 0; a <= 8; a++)
+	for (str = 'a'; str <= 'z'; str++)
 	{
-		for (b = a + 1; b <= 9; b++)
-		{
-			putchar(a + '0');
-			putchar(b + '0');
-			if (a < 8)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
+		putchar(str);
 	}
 	putchar('\n');
 	return (0);
